@@ -5,10 +5,16 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Angular Application</title>
+    <script src="js/angular.js"></script>
 </head>
 <body>
 
-    <script src="js/angular.js"></script>
+    <div id="root" ng-app="app" ng-cloak>
+      <div ng-controller="MainController">
+        {{ name }} || {{ email }} || {{ phone }}
+      </div>
+    </div>
+
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
 
